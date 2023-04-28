@@ -1,5 +1,5 @@
 @smoke
-Feature: F01_Register | users could register with new accounts
+Feature: F01_Register | could create new accounts by registering
 
   Scenario: guest user could register with valid data successfully
     Given I go to register page

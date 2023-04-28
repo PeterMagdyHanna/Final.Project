@@ -10,9 +10,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 
 public class Hooks {
-    public static WebDriver driver ;
+    public static WebDriver driver;
+
     @Before
-    public static void OpenBrowser(){
+    public static void OpenBrowser() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -22,8 +23,9 @@ public class Hooks {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://demo.nopcommerce.com/");
     }
+
     @After
-    public static void AfterMethod () {
+    public static void AfterMethod() {
         driver.quit();
     }
 }

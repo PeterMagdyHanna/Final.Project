@@ -1,5 +1,5 @@
 @smoke
-Feature: F02_Login | users could use login functionality to use their accounts
+Feature: F02_Login | Users could access their accounts via the login functionality
 
   Scenario: user could login with valid email and password
     Given I go to login page
